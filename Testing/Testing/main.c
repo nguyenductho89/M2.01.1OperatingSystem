@@ -6,10 +6,27 @@
 //  Copyright © 2018 Nguyễn Đức Thọ. All rights reserved.
 //
 
+
 #include <stdio.h>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    printf("Hello, World!\n");
+int
+main ()
+{
+    printf ("initial\n");
+    printf ("id: %d, parent: %d\n", getpid (), getppid ());
+    fork ();
+    printf ("   first fork\n");
+    printf ("   id: %d, parent: %d\n", getpid (), getppid ());
+    
+    
+    fork ();
+    printf ("       second fork\n");
+    printf ("       id: %d, parent: %d\n", getpid (), getppid ());
+    
+    fork ();
+    printf ("           third fork\n");
+    printf ("           id: %d, parent: %d\n", getpid (), getppid ());
+    
     return 0;
 }
+
