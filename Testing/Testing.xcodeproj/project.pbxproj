@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D0BB478D2067F40A007D5F48 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = D0BB478C2067F40A007D5F48 /* main.c */; };
+		D0BB47952067F6AE007D5F48 /* readcmd.c in Sources */ = {isa = PBXBuildFile; fileRef = D0BB47932067F6AE007D5F48 /* readcmd.c */; };
+		D0BB47972067F7D8007D5F48 /* tst.c in Sources */ = {isa = PBXBuildFile; fileRef = D0BB47962067F7D8007D5F48 /* tst.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,9 @@
 /* Begin PBXFileReference section */
 		D0BB47892067F40A007D5F48 /* Testing */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Testing; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0BB478C2067F40A007D5F48 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		D0BB47932067F6AE007D5F48 /* readcmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = readcmd.c; sourceTree = "<group>"; };
+		D0BB47942067F6AE007D5F48 /* readcmd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = readcmd.h; sourceTree = "<group>"; };
+		D0BB47962067F7D8007D5F48 /* tst.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tst.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +62,9 @@
 		D0BB478B2067F40A007D5F48 /* Testing */ = {
 			isa = PBXGroup;
 			children = (
+				D0BB47962067F7D8007D5F48 /* tst.c */,
+				D0BB47932067F6AE007D5F48 /* readcmd.c */,
+				D0BB47942067F6AE007D5F48 /* readcmd.h */,
 				D0BB478C2067F40A007D5F48 /* main.c */,
 			);
 			path = Testing;
@@ -119,6 +127,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0BB47972067F7D8007D5F48 /* tst.c in Sources */,
+				D0BB47952067F6AE007D5F48 /* readcmd.c in Sources */,
 				D0BB478D2067F40A007D5F48 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
